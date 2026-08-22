@@ -2,7 +2,7 @@
 import { FormEvent,useEffect,useMemo,useState } from 'react';
 type View='month'|'week'|'day'|'list'; type Priority='high'|'medium'|'low';
 type Task={id:string;title:string;details:string;start:string;end:string;category:string;priority:Priority;done:boolean};
-const cats:Record<string,string>={'งาน':'#d89d91','ส่วนตัว':'#aeb49a','นัดหมาย':'#c4a6b8'};
+const cats:Record<string,string>={'งาน':'#e54b55','ส่วนตัว':'#71a747','นัดหมาย':'#56bdb2'};
 const months=['มกราคม','กุมภาพันธ์','มีนาคม','เมษายน','พฤษภาคม','มิถุนายน','กรกฎาคม','สิงหาคม','กันยายน','ตุลาคม','พฤศจิกายน','ธันวาคม'];
 const days=['จ.','อ.','พ.','พฤ.','ศ.','ส.','อา.']; const pad=(n:number)=>String(n).padStart(2,'0');
 const input=(d:Date)=>`${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}T${pad(d.getHours())}:${pad(d.getMinutes())}`;
