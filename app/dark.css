@@ -1,0 +1,34 @@
+.tm{color:var(--text)}
+.quick{left:calc(50% + 115px);width:620px;max-width:calc(100vw - 298px);transform:translateX(-50%)}
+.tm-side.collapsed+.tm-main .quick{left:calc(50% + 37px);width:620px;max-width:calc(100vw - 142px)}
+.summary button{appearance:none;border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:14px;padding:15px;display:flex;align-items:center;gap:12px;text-align:left;cursor:pointer;transition:transform .15s ease,border-color .15s ease}
+.summary button:hover{transform:translateY(-2px);border-color:#8fb382}.summary button>i{font-style:normal;width:36px;height:36px;border-radius:11px;background:#d8eed0;display:grid;place-items:center}.summary button>div{flex:1}.summary button b,.summary button span{display:block}.summary button b{font-size:22px}.summary button span{font-size:10px;color:var(--muted)}.summary button>em{font-style:normal;color:var(--muted)}
+.dark .summary button>i{background:#354637;color:#edf4ea}
+.paw{position:relative;display:block;width:29px;height:27px;margin:auto;color:#18211b}
+.paw span{position:absolute;display:block;background:transparent;border:3px solid currentColor}
+.paw .toe{width:8px;height:10px;border-radius:50%}
+.paw .t1{left:0;top:7px;transform:rotate(-14deg)}.paw .t2{left:7px;top:0}.paw .t3{right:7px;top:0}.paw .t4{right:0;top:7px;transform:rotate(14deg)}
+.paw .paw-pad{left:5px;bottom:0;width:19px;height:13px;border-width:4px;border-radius:48% 48% 44% 44% / 62% 62% 42% 42%;transform:none}
+.tm-side.collapsed .paw,.tm-side.collapsed .paw span{display:block}
+.dark .paw{color:#27302a}
+.dark{color-scheme:dark}
+.dark button,.dark input,.dark select,.dark textarea{color:var(--text)}
+.dark .task-check{background:#18231b;border-color:#708673}
+.dark .summary article>i,.dark .status.todo{background:#354637;color:#edf4ea}
+.dark .progress-big{background:linear-gradient(100deg,#24453f,#334d2e);border-color:#48664a;color:#f2f7ef}
+.dark .progress-big p{color:#c1d0c0}
+.dark .bar{background:#15251aaa}.dark .bar i{background:#7fbd70}
+.dark .search,.dark .top-actions>button,.dark .filters button{color:var(--text)}
+.dark .status.progress{background:#244e4a;color:#bcece6}
+.dark .status.completed{background:#304f32;color:#c9e8c8}
+.dark .prio.high{background:#5a3034;color:#ffc9ce}
+.dark .prio.medium{background:#544a25;color:#ffe999}
+.dark .prio.low{background:#354b32;color:#cce8c8}
+.dark .inline-add button{background:#354b37;color:#edf4ea}
+.dark .tag-list button{background:#244e4a;color:#bcece6}
+.dark .projects-page article button,.dark .danger{background:#593135;color:#ffcbd0}
+.dark .empty i{background:#354b37;color:#bfe0b8}
+.dark .tm-side nav button.active{background:#38563c;color:#f2f7ef}
+.dark .tm-side em{background:#ffffff18;color:#edf4ea}
+.dark .task-copy .late{color:#ff8f98}
+@media(max-width:700px){.quick,.tm-side.collapsed+.tm-main .quick{left:50%!important;width:calc(100% - 24px)!important;max-width:none!important;transform:translateX(-50%)!important;bottom:72px}}
